@@ -21,3 +21,13 @@ Smart contract that provide list of tasks. Contract allows different actions wit
 Smart contract that demonstrates the use of interfaces. Smart contract 'StorageClient' can interact with 'Storage' to access the stored value.
 
 ------------
+#### 5. Wallet
+
+Simple wallet that allows you to send transactions with a separate fee payment, or minus the fee from the transfer amount. It is also possible to transfer all the money and destroy the wallet.
+
+------------
+#### 6. Botanical NFT
+
+NFT's smart contract. It represents the tokens of plants, with their name, Latin name, description and years when the plant was given a botanical name.
+
+------------
