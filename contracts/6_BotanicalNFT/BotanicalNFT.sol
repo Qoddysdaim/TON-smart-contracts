@@ -6,6 +6,7 @@ contract BotanicalNFT {
      Exception codes:
       101 - token latin name is exist.
       102 - message sender is not a token owner.
+      103 - message sender is not a owner token collection.
     */
 
     struct Token {
@@ -27,12 +28,19 @@ contract BotanicalNFT {
         _;
     }
 
+    constructor() public {
+        require(tvm.pubkey() != 0, 101);
+        require(msg.pubkey() == tvm.pubkey(), 103);
+        tvm.accept();
+    }
+
     function createToken(
         string name, 
         string latinName, 
         string description, 
         uint32 yearObtainName
     ) public {
+        require(msg.pubkey() == tvm.pubkey(), 103);
         tvm.accept();
         // checking that the token does not exist
         require(!tokenMap.exists(latinName), 101);
