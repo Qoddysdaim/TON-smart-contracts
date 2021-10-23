@@ -16,3 +16,8 @@ Smart contract that provide a queue of store and allows someone to join the queu
 Smart contract that provide list of tasks. Contract allows different actions with tasks (add, view description, delete, mark as completed, view full list of tasks, view number of open tasks).
 
 ------------
+#### 4. Storage
+
+Smart contract that demonstrates the use of interfaces. Smart contract 'StorageClient' can interact with 'Storage' to access the stored value.
+
+------------
