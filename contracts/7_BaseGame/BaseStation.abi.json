@@ -1,0 +1,82 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addMilitaryUnit",
+			"inputs": [
+				{"name":"unit","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "removeMilitaryUnit",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deathHandling",
+			"inputs": [
+				{"name":"attacker","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDefence",
+			"inputs": [
+				{"name":"value","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"damage","type":"uint16"},
+				{"name":"attacker","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "health",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"health","type":"int32"}
+			]
+		},
+		{
+			"name": "defense",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"defense","type":"uint32"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"health","type":"int32"},
+		{"name":"defense","type":"uint32"},
+		{"name":"army","type":"map(address,address)"}
+	]
+}

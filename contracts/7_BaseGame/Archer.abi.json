@@ -1,0 +1,92 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"station","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"target","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deathHandling",
+			"inputs": [
+				{"name":"attacker","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "deathDueBase",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDefence",
+			"inputs": [
+				{"name":"value","type":"uint32"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "acceptAttack",
+			"inputs": [
+				{"name":"damage","type":"uint16"},
+				{"name":"attacker","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "health",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"health","type":"int32"}
+			]
+		},
+		{
+			"name": "defense",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"defense","type":"uint32"}
+			]
+		},
+		{
+			"name": "damage",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"damage","type":"uint8"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"health","type":"int32"},
+		{"name":"defense","type":"uint32"},
+		{"name":"baseStation","type":"address"},
+		{"name":"damage","type":"uint8"}
+	]
+}

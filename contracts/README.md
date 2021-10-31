@@ -31,3 +31,10 @@ Simple wallet that allows you to send transactions with a separate fee payment, 
 NFT's smart contract. It represents the tokens of plants, with their name, Latin name, description and years when the plant was given a botanical name.
 
 ------------
+#### 7. Base Game
+
+Pseudo Game on smart contract. This dapp has a complex inheritance structure.
+
+Players create bases and military units, they can attack other bases and units. The finances of the defeated unit are transferred to the attacker. If the base falls, then all units die, and all their funds go to the attacker.
+
+------------
