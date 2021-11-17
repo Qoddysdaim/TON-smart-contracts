@@ -16,7 +16,7 @@ struct Purchase{
 struct PurchasesSummary{
     uint256 totalPaidAmount;
     uint256 totalNotPaidAmount;
-    uint256 totalPaidPrice;
+    uint256 totalPrice;
 }
 
 interface PurchasesContainer {

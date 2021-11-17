@@ -41,7 +41,7 @@
 			"inputs": [
 			],
 			"outputs": [
-				{"components":[{"name":"totalPaidAmount","type":"uint256"},{"name":"totalNotPaidAmount","type":"uint256"},{"name":"totalPaidPrice","type":"uint256"}],"name":"value0","type":"tuple"}
+				{"components":[{"name":"totalPaidAmount","type":"uint256"},{"name":"totalNotPaidAmount","type":"uint256"},{"name":"totalPrice","type":"uint256"}],"name":"value0","type":"tuple"}
 			]
 		},
 		{

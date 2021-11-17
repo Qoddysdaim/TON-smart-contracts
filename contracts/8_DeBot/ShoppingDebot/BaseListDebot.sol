@@ -7,12 +7,12 @@ import "BaseInitDebot.sol";
 
 abstract contract BaseListDebot is BaseInitDebot{
 
-    function getFormattedShoppingSummary(PurchasesSummary summary) internal returns(string){
+    function getShoppingSummary(PurchasesSummary summary) internal returns(string){
         return format(
                 "You have {}/{}/{} (Number of purchased items/Number of not purchased items/Total items price)",
                     summary.totalPaidAmount,
                     summary.totalNotPaidAmount,
-                    summary.totalPaidPrice
+                    summary.totalPrice
             );
     }
 

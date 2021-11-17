@@ -11,7 +11,7 @@ contract ShoppingListDebot is BaseListDebot{
     string private nameOfCurrentPurchase;
 
     function showMenu(PurchasesSummary summary) public override{
-        string shoppingSummary = getFormattedShoppingSummary(summary);
+        string shoppingSummary = getShoppingSummary(summary);
         Menu.select(shoppingSummary, "",
             [
                 MenuItem("Add product to shopping list", "", tvm.functionId(addNameInput)),

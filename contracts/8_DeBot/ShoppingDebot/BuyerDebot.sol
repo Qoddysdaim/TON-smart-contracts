@@ -11,7 +11,7 @@ contract BuyerDebot is BaseListDebot{
     uint private idToBuy;
 
     function showMenu(PurchasesSummary summary) public override{
-        string shoppingSummary = getFormattedShoppingSummary(summary);
+        string shoppingSummary = getShoppingSummary(summary);
         Menu.select(shoppingSummary, "",
             [
                 MenuItem("Buy product from shopping list", "", tvm.functionId(buyIdInput)),
@@ -62,9 +62,9 @@ contract BuyerDebot is BaseListDebot{
     ) {
         name = "Buyer DeBot";
         version = "1.0.0";
-        publisher = "Timur Khasanov";
+        publisher = "Qoddrysdaim";
         caption = "Here you can buy items from your puchases list.";
-        author = "Timur Khasanov";
+        author = "Qoddrysdaim";
         support = address.makeAddrStd(0, 0x1e3713373c839489cd84f0745d7f98a0ba3bcdbd91a56ac30c79f769303ec603);
         hello = "Welcome to Buyer DeBot";
         language = "en";

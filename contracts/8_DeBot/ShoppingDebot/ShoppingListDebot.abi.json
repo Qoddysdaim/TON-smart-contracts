@@ -5,7 +5,7 @@
 		{
 			"name": "showMenu",
 			"inputs": [
-				{"components":[{"name":"totalPaidAmount","type":"uint256"},{"name":"totalNotPaidAmount","type":"uint256"},{"name":"totalPaidPrice","type":"uint256"}],"name":"summary","type":"tuple"}
+				{"components":[{"name":"totalPaidAmount","type":"uint256"},{"name":"totalNotPaidAmount","type":"uint256"},{"name":"totalPrice","type":"uint256"}],"name":"summary","type":"tuple"}
 			],
 			"outputs": [
 			]

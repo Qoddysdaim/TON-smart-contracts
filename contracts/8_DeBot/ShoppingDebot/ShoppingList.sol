@@ -53,7 +53,7 @@ contract ShoppingList is PurchasesContainer{
             if(!purchaseToBuy.deleted){
                 if(purchaseToBuy.purchased){
                     summary.totalPaidAmount += purchaseToBuy.amount;
-                    summary.totalPaidPrice += purchaseToBuy.totalPrice;
+                    summary.totalPrice += purchaseToBuy.totalPrice;
                 } else{
                     summary.totalNotPaidAmount += purchaseToBuy.amount;
                 } 
