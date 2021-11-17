@@ -38,6 +38,8 @@ Pseudo Game on smart contract. This dapp has a complex inheritance structure.
 Players create bases and military units, they can attack other bases and units. The finances of the defeated unit are transferred to the attacker. If the base falls, then all units die, and all their funds go to the attacker.
 
 ------------
-### 8. DeBot
+### 8. Shopping DeBot
+
+DeBot, with which you can make purchases in the store - that is, add purchases to the shopping basket, display a shopping list, delete purchases.
 
 ------------
